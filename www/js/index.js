@@ -20,6 +20,8 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+	
+	this.offlineTest();
     },
     // Bind Event Listeners
     //
@@ -45,5 +47,13 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+	
+	alert("ready");
+    },
+    
+    offlineTest: function()
+    {
+	alert("test");
+    
     }
 };
